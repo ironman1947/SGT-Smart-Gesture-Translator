@@ -14,7 +14,24 @@ import io
 from gtts import gTTS
 import google.generativeai as genai
 from dotenv import load_dotenv
+# ... imports ...
 
+# --- PATH CONFIGURATION (NEW) ---
+# Get the folder where this script (Real.py) is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Go up one level to the project root
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..'))
+
+# Define paths to your folders
+MODELS_DIR = os.path.join(PROJECT_ROOT, 'models')
+LOGS_DIR = os.path.join(PROJECT_ROOT, 'logs')
+ENV_PATH = os.path.join(PROJECT_ROOT, '.env')
+
+# 1. Load the secret .env file from the root
+load_dotenv(dotenv_path=ENV_PATH)
+
+# ... rest of API_KEY setup ...
 
 # 1. Load the secret .env file
 load_dotenv()
@@ -54,9 +71,10 @@ except AttributeError:
 # ----------------------------- #
 
 # Configure logging to write to a file with UTF-8 encoding
+# Configure logging to write to the 'logs' folder
 logging.basicConfig(
-    filename='gesture_detection.log',
-    filemode='w',  # Overwrite the log file each run
+    filename=os.path.join(LOGS_DIR, 'gesture_detection.log'),  # <--- UPDATED PATH
+    filemode='w',
     format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
@@ -66,9 +84,10 @@ logging.basicConfig(
 # ----------------------------- #
 
 # Paths to the saved model and artifacts
-MODEL_PATH = os.path.abspath('SGT.h5')
-LABEL_ENCODER_PATH = os.path.abspath('label_encoder.pkl')
-SCALER_PATH = os.path.abspath('scaler.pkl')
+# Paths to the saved model and artifacts (Updated to use MODELS_DIR)
+MODEL_PATH = os.path.join(MODELS_DIR, 'SGT.h5')
+LABEL_ENCODER_PATH = os.path.join(MODELS_DIR, 'label_encoder.pkl')
+SCALER_PATH = os.path.join(MODELS_DIR, 'scaler.pkl')
 
 # Load the trained model
 try:
