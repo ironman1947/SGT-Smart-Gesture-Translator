@@ -31,7 +31,7 @@ Unlike standard sign language detectors that just output letters, **SGT uses Gen
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/SGT-Smart-Gesture-Translator.git](https://github.com/YOUR_USERNAME/SGT-Smart-Gesture-Translator.git)
+    git clone [https://github.com/ironman1947/SGT-Smart-Gesture-Translator.git](https://github.com/YOUR_USERNAME/SGT-Smart-Gesture-Translator.git)
     cd SGT-Smart-Gesture-Translator
     ```
 
