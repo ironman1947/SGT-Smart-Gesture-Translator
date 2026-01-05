@@ -28,8 +28,17 @@ for letter in letters:
     key_to_label[ord(letter.lower())] = letter  # Lowercase keys
     key_to_label[ord(letter.upper())] = letter  # Uppercase keys
 
-# Path to dataset (for saving keypoints)
-dataset_path = 'media_pipe_keypoints_dataset'
+# ... imports ...
+
+# --- PATH CONFIGURATION ---
+# Get the folder where this script is (i.e., 'codes/')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Go up one level to the project root
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..'))
+
+# Define the dataset path in the Project Root
+dataset_path = os.path.join(PROJECT_ROOT, 'media_pipe_keypoints_dataset')
 
 # Create directories for each label if they don't exist
 if not os.path.exists(dataset_path):
