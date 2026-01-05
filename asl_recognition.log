@@ -1,0 +1,3 @@
+2025-03-25 12:45:11,218 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-03-25 12:45:11,219 - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2025-03-25 12:45:11,220 - INFO - Loaded ASL recognition model successfully.

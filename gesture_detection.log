@@ -1,0 +1,17 @@
+2026-01-05 13:19:02,862 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-01-05 13:19:02,863 - WARNING - Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+2026-01-05 13:19:02,863 - INFO - Loaded model from '/Users/ompradipchougule/Documents/Mega project/SGT.h5' successfully.
+2026-01-05 13:19:02,883 - INFO - Loaded label encoder from '/Users/ompradipchougule/Documents/Mega project/label_encoder.pkl' and scaler from '/Users/ompradipchougule/Documents/Mega project/scaler.pkl' successfully.
+2026-01-05 13:19:04,348 - INFO - === Real-Time Hand Gesture Recognition Started ===
+2026-01-05 13:19:04,348 - INFO - Press 'ESC' to quit. Press 'C' to confirm the letter.
+2026-01-05 13:19:10,599 - INFO - Added Letter: I
+2026-01-05 13:19:14,399 - INFO - Added Letter: IA
+2026-01-05 13:19:16,466 - INFO - Added Letter: IAM
+2026-01-05 13:19:18,401 - INFO - Added Letter: IAMF
+2026-01-05 13:19:20,734 - INFO - Added Letter: IAMFI
+2026-01-05 13:19:22,840 - INFO - Added Letter: IAMFIN
+2026-01-05 13:19:30,774 - INFO - Added Letter: IAMFINE
+2026-01-05 13:19:32,562 - ERROR - Gemini API Error: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-05 13:19:36,842 - INFO - Spoken Sentence: IAMFINE
+2026-01-05 13:19:40,695 - INFO - ESC pressed. Exiting program.
+2026-01-05 13:19:40,778 - INFO - === Real-Time Hand Gesture Recognition Ended ===
