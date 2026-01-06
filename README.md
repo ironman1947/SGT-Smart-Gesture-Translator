@@ -65,6 +65,6 @@ The system relies on a custom-trained Keras model (`SGT.h5`) trained on a datase
 ## 👥 The Team
 * **Om Chougule** 
 * **Harsh Desai** - *Team Lead*
-* **Rohan Ilke**
+* **Rohan Ilake**
 * **Nikhil Gosai**
 
